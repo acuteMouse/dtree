@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+
+<head>
+	<title>Destroydrop &raquo; Javascripts &raquo; Tree</title>
+
+	<link rel="css" href="dtree.css" type="text/css" />
+	<script type="text/javascript" src="dtree.js"></script>
+
+</head>
+
+<body>
+
+<h1><a href="/">Destroydrop</a> &raquo; <a href="/javascripts/">Javascripts</a> &raquo; <a href="/javascripts/tree/">Tree</a></h1>
+
+<h2>Example</h2>
+
+<div class="dtree">
+
+	<p><a href="javascript: d.openAll();">open all</a> | <a href="javascript: d.closeAll();">close all</a></p>
+
+	<script type="text/javascript">
+		
+
+		d = new dTree('d');
+
+		d.add(0,-1,'My example tree');
+		d.add(1,0,'Node 1');
+		d.add(2,0,'Node 2');
+		d.add(3,1,'Node 1.1');
+		d.add(4,0,'Node 3');
+		d.add(5,3,'Node 1.1.1');
+		d.add(6,5,'Node 1.1.1.1');
+		d.add(7,0,'Node 4');
+	
+
+		document.write(d);
+
+	
+	</script>
+
+</div>
+
+<p><a href="mailto&#58;drop&#64;destroydrop&#46;com">&copy;2002-2003 Geir Landr&ouml;</a></p>
+
+</body>
+
+</html>

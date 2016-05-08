@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+
+    <package name="default" extends="struts-default">
+	 
+	 <action name="select" class="com.unitBean.UnitAction" method="queryunitList">
+          <result name="success">/index.jsp</result>                                      
+       </action>
+      <action name="deleteunit" class="com.unitBean.UnitAction" method="deleteunit">
+          <result name="operationSuccess" >/deletesuccess.jsp</result> 
+          <result name="error" >/deletefailed.jsp</result> 
+       </action>
+      <action name="insertunit" class="com.unitBean.UnitAction" method="insertunit">
+          <result name="error" >/insertfailed.jsp</result>        
+		<result name="operationSuccess" >/insertsuccess.jsp</result>                                      
+       </action>
+       <action name="updateunit" class="com.unitBean.UnitAction" method="updateunit">
+          <result name="operationSuccess" >/updatesuccess.jsp</result>    
+           <result name="error" >/updatefailed.jsp</result>                                     
+       </action>
+    </package>
+
+</struts>
